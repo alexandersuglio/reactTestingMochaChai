@@ -28,10 +28,13 @@ this.setState({comment: ''});
 	render() {
 		return (
 			<form onSubmit={this.handleSubmit.bind(this)} className="comment-box">
+
 			<textarea 
 			value={this.state.comment}
 			onChange={this.handleChange.bind(this)} />
+			<div>
 			<button action="submit"> submit comment </button>
+			</div>
 			</form>)
 	}
 }
